@@ -1,0 +1,22 @@
+.heading{
+    background-color: rgb(9, 9, 244);
+    color: white;
+}
+body{
+    background-color: hsl(0, 0%, 75%);
+}
+.while{
+    background-color: white;
+}
+.size{
+    width: 1600px;
+}
+h1{
+    text-align: center;
+}
+.id{
+    width: 30px;
+}
+.name{
+    width:200px;
+}

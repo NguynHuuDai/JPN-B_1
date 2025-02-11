@@ -1,0 +1,33 @@
+.span1{
+    color:rgb(223, 10, 10);
+}
+.class1{
+    border: 5px solid rgb(25, 92, 30);
+}
+.class2{
+    padding-left: 17px;
+    background-color: rgb(120, 120, 120);
+    padding-top: 1px;
+    height: 280px;
+}
+.class3{
+    border-left: 6px solid rgb(0, 255, 102);
+    background-color: aliceblue;
+    width: 1400px;
+    height: 150px;
+    padding-left: 30px;
+}
+.class4{
+
+    color: darkred;
+}
+.class5{
+    color:crimson;
+}
+.class6{
+    color:blue;
+}
+.div6{
+    background-color: green;
+    color: aliceblue;
+}
