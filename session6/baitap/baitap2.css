@@ -1,17 +1,26 @@
 
-body{
-    background-color: grey;
+.div{
+    background-color: white; 
+    border: 20px solid lightgray; 
+    display: flex;
+    justify-content: right;
+    padding-left: 12px;
+    width: 20%;
+   
+    
+   
 }
 .div1{
     background-color: rgb(255, 255, 255);
-    width: 700px;
-    height: 800px;
+    width: 200px;
+    height: 300px;
+        
 
     
 }
 h1{
     color: black;
-    text-align: center;
+    
 }
 button{
     background-color: blue;
@@ -20,5 +29,5 @@ button{
     
 }
 form{
-    padding-left: 270px;
+    padding-left: 1 px;
 }
