@@ -1,0 +1,54 @@
+body{
+    background-color: rgb(211, 206, 206);
+}
+.class1{
+    text-align: center;
+    width: 1600px;
+    height: 300px;
+}
+.div1{
+   
+    background-color: green;
+    color: white;
+    
+}
+.div2{
+    background-color: yellow;
+    color: black;
+}
+.div3{
+    background-color: red;
+    color: white;
+}
+.cnt{
+        display: inline-block; 
+        padding: 2px 5px;
+        font-size: 20px;
+        margin: 3px;
+}
+.blu{
+    background-color: blue;
+    color: white;
+}
+.gr{
+    background-color: rgb(221, 240, 223);
+}
+.wh{
+    background-color: white;
+}
+.size{
+    height: 50px;
+    width: 30px;
+}
+.gay{   
+    width: 40px;
+}
+.date{
+    width: 250px;
+}
+.actions{
+    width: 600px;
+}
+.mid{
+    text-align: center;
+}
