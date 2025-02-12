@@ -5,6 +5,8 @@ hr{
 }
 .blu{
     color: rgb(10, 10, 84);
+    display: inline;
+    
 }
 
 .table{
@@ -12,11 +14,32 @@ hr{
 }
 td{
     padding: 10px;
-    border: 1px solid black;
+   
 }
 .line{
     border: none;
 }
-
-
-
+div{
+    background-color: black;
+    width: 1px;
+    height: 170px;
+    padding-right: 3px;
+    padding-top: 105px;
+    
+}
+.border-cell{
+    width: 400px;
+    padding-bottom: 70px;
+}
+.div1{
+    display: inline;   
+}
+.ig{
+    padding-left: 15px;
+}
+.hn{
+    padding-bottom: 70px;
+}
+.mo{
+    opacity: 0.5;
+}
