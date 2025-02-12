@@ -1,0 +1,23 @@
+.div1{
+    text-align: center;
+    padding-top: 1px;
+    padding-bottom: 20px;
+    background-color: rgb(2, 244, 2);
+    
+}
+table{
+    width: 100%;
+    border-spacing: 7px;
+}
+.let{
+    background-color: rgb(235, 235, 235);
+    width: 350px;
+    height: 400px;
+    vertical-align: top;
+    padding-left: 10px;
+}
+.end{
+    text-align: center;
+    background-color: black;
+    color: white;
+}
