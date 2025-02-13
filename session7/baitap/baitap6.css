@@ -1,0 +1,48 @@
+.custom-select {
+    position: relative;
+    display: inline-block;
+}
+
+/* Ẩn mũi tên mặc định */
+select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding-right: 30px; /* Đảm bảo không bị che khuất khi thêm mũi tên */
+    font-size: 16px;
+}
+
+/* Tạo mũi tên lên bằng cách dùng pseudo element */
+.custom-select::after {
+    content: "\25B2"; /* Mã Unicode cho mũi tên lên */
+    font-size: 16px;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    pointer-events: none; /* Đảm bảo mũi tên không can thiệp vào chọn lựa */
+}
+.custom-select {
+    position: relative;
+    display: inline-block;
+}
+
+/* Ẩn mũi tên mặc định của select */
+select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding-right: 30px; /* Tạo khoảng trống cho mũi tên */
+    font-size: 16px;
+}
+
+/* Tạo mũi tên lên bằng cách dùng pseudo element */
+.custom-select::after {
+    content: "\25B2"; /* Mã Unicode cho mũi tên lên */
+    font-size: 16px;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    pointer-events: none; /* Đảm bảo mũi tên không can thiệp vào lựa chọn */
+}

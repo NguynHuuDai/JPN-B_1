@@ -1,0 +1,61 @@
+body{
+    background-color: gray;
+}
+.div1{
+    background-color: white;
+    height: 360px;
+    width: 420px;
+    padding: 30px;
+    border-radius: 13px;
+    
+    
+}
+.line {
+    width: 95%;
+    height: 10px; 
+    background: linear-gradient(to right, #C97C4E 76%, #F5DEB3 24%);
+    vertical-align: middle;
+  }
+  .container {
+    position: relative; 
+  }
+
+  .image1, .image2 {
+    position: absolute; 
+    width: 30px; 
+    height: 30px; 
+    border-radius: 50%; 
+    
+  }
+
+  .image1 {
+    left: 0; 
+    
+  }
+
+  .image2 {
+    left: 20px; 
+    top: 0; 
+  }
+  button{
+    background-color: #F5DEB3;
+    border-radius: 5px;
+    border: 2px solid #C97C4E;
+
+  }
+  a{
+    text-decoration: none;
+    color: blue;
+  }
+ .span1{
+    opacity: 0.6;
+    padding-right: 310px;
+ }
+ .span2{
+    opacity: 0.6;
+ }
+ .span3{
+    vertical-align: middle;
+    
+    padding-left: 317px;
+ }
