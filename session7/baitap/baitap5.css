@@ -5,11 +5,11 @@
 }
 .div1{
     width: 300px;
-    height: 550px;
+    height: 600px;
     text-align: center;
     line-height: 40px;
     background-color: aliceblue;
-    border-radius: 50px;
+    border-radius: 10px;
 }   
 .div2{
     background-color: red;
@@ -29,6 +29,7 @@
     border-radius: 50px;
     background-color: red;
     color: white;
+    border: none;
 }
 .button2{
     width: 100px;
@@ -36,6 +37,7 @@
     border-radius: 50px;
     color: red;
     background-color: white;
+    border: 3px solid red;
 }
 .span1{
     position: relative;
