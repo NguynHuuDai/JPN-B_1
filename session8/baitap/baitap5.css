@@ -1,0 +1,11 @@
+.back1{
+    background-color: gray;
+    height: 400px;
+    width: 600px;
+    vertical-align: middle;
+}
+.back2{
+    background-color: rgb(178, 178, 178);
+    height: 250px;
+    width: 600px;
+}

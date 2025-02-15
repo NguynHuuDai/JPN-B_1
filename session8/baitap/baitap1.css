@@ -1,0 +1,18 @@
+
+
+
+.div1{
+    text-align: center;
+    height: 460px;
+    width: 400px;
+    border: 1px solid rgb(210, 210, 210);
+    display: inline-block;
+}
+.div2{
+    text-align: center;
+    height: 460px;
+    width: 400px;
+    border: 1px solid rgb(210, 210, 210);
+    display: inline-block;
+    border-right: 3px solid black;
+}

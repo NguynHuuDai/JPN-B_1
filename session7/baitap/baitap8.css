@@ -15,6 +15,7 @@ body{
     height: 10px; 
     background: linear-gradient(to right, #C97C4E 76%, #F5DEB3 24%);
     vertical-align: middle;
+    border-radius: 4px;
   }
   .container {
     position: relative; 

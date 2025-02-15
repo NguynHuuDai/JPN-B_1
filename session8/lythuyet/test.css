@@ -1,0 +1,16 @@
+.comment{
+    opacity: 0.5;
+}
+.pv{
+    display: inline;
+}
+
+.tablee{
+    width: 900px;
+    background-color: white;
+    border-radius: 20px
+}
+body{
+    background-color: black;
+    
+}
