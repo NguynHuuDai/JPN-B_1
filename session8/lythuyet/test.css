@@ -1,16 +1,39 @@
-.comment{
-    opacity: 0.5;
+div{
+    background-color: rebeccapurple;
+    width: 400px;
+    height: 300px;
+    padding-left: 30px;
+    padding-top: 15px;
 }
-.pv{
-    display: inline;
+.line1{
+    color: rgb(255, 255, 255);
 }
-
-.tablee{
-    width: 900px;
-    background-color: white;
-    border-radius: 20px
+.line2{
+    color: rgb(246, 246, 246);
+    margin-left: 130px;
 }
-body{
-    background-color: black;
+.line3{
+    margin-top: 10px;
+    margin-left: 20px;
+    background-color: rebeccapurple;
+    border: 2px solid rgb(121, 121, 121);
     
+}
+.coler{
+    background-color: rebeccapurple;
+    border: 2px solid rgb(121, 121, 121);
+}
+.line4{
+    color: rgb(246, 246, 246);
+}
+.size{
+    width: 356px;
+    height: 100px;
+    background-color: rebeccapurple;
+    border: 2px solid rgb(121, 121, 121);
+}
+button{
+    width: 130px;
+    height: 40px;
+    border-radius: 5px;
 }
