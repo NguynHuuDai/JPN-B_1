@@ -1,0 +1,35 @@
+.div1{
+    width: 100%;
+    height: 300px;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.div2{
+    width: 100%;
+    height: 150px;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+}
+.div2 div{
+    width: 16%;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: purple;
+    border-radius: 7px;
+}
+.cl1{
+    margin-right: auto;
+    margin-left: 8px;
+}
+.cl2{
+    margin-right: 8px;
+    margin-left: auto;
+}

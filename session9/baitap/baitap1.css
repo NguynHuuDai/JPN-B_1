@@ -1,0 +1,24 @@
+.div2{
+    background-color: cyan;
+    color: white;
+    height: 100px;
+    width: 100px;
+    display: flex;
+    
+}
+.div1{
+    display: flex;
+    background-color: grey;
+    border: 3px solid black;
+    height: 400px;
+    width: 400px;
+    
+   
+}
+*{
+    
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+    justify-content: center;
+}

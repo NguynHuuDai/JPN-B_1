@@ -1,0 +1,22 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+    background-color: aliceblue;
+    border: 2px solid black;
+}
+
+.item {
+    background-color: rgb(152, 152, 252);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    flex: 1 1 23%;
+}
+
+.item5 {
+    flex: 1 1 48%;
+}

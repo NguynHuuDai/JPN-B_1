@@ -1,0 +1,47 @@
+.div1{
+    width: 100%;
+    height: 100%;
+}
+.div2{
+    width: 100%;
+    height: 10%;
+    background-color: rgb(40, 40, 40);
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    
+}
+.room{
+    width: 237px;
+    flex-wrap: wrap;
+    display: flex;
+    gap: 12px;
+    margin-bottom: 10px; 
+    color: white;   
+    
+}
+a{
+    text-decoration: none;  
+    
+}
+
+.div3{
+    width: 100%;
+    height: 17%;
+    background-color: rgb(186, 186, 186);
+}
+.div4{
+    width: 100%;
+    height: 42%;
+}
+.div5{
+    width: 100%;
+    height: 25%;
+    background-color: rgb(186, 186, 186);
+}
+.div6{
+    width: 100%;
+    height: 6%;
+    background-color: rgb(40, 40, 40);
+}
+
