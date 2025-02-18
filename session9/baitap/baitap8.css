@@ -56,17 +56,25 @@ body {
 
 button a {
     text-decoration: none;
-    background-color: #505050;
     color: white;
     padding: 10px 23px;
     border-radius: 5px;
     font-weight: bold;
 }
+button{
+    background-color: rgb(2, 221, 2);
+    border: none;
+    width: 150px;
+    height: 30px;
+    border-radius: 7px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+    
 
-button a:hover {
-    background-color: #45a049;
 }
-
+.button:hover {
+    background-color: #d90606; 
+}
 .div3 {
     text-align: center;
     margin: 40px 0;
