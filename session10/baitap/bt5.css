@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    box-sizing: o;
+    padding: 0;
+}
+body{
+    background-color: grey;
+}
+.div{
+    width: 100%;
+    height: 100%;
+   
+  
+}
+p{
+    margin-top: 5px;
+}
+.div1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+}
+.div2{
+    width: 100%;
+    height: 20px;
+    background-color: grey;
+    display: flex;
+    margin-left: 310px;
+    padding-top: 15px;
+    
+}
+.room{
+    display: flex;
+}
+
+
+
+.room img {
+    width: 120px;
+    height: auto;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+.room content {
+    display: flex;
+    flex-direction: column; 
+    margin-left: 20px;
+}
+
+.info {
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    gap: 20px; 
+}
+
+.year {
+    background-color: #1e40af;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.category {
+    background-color: gray;
+}
+.content{
+    margin-left: 10px;
+}
+hr{
+    background-color: white;
+    width: 660px;
+    margin-left: 310px;
+}
+.end{
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+}
+i{  
+    margin-top: 10px;
+    width: 30px;
+    height: 30px;
+    font-size: 30px;
+    color: rgb(36, 36, 36);
+}
+.pp{
+    display: flex;
+   
+}

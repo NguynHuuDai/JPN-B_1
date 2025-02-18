@@ -1,0 +1,22 @@
+.duoi{
+    position: absolute;
+    color: white;
+}
+img{
+    position: absolute;
+}
+.bu{
+    color: white;
+    border: 2px solid white;
+    width: 70px;
+    margin-bottom: 320px;
+    margin-top: 10px;
+    display: flex;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+}
+p, h3{
+    margin-left: 10px;
+}

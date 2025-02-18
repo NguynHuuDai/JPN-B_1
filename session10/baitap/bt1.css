@@ -1,0 +1,36 @@
+a{
+    text-decoration: none;
+    color: rgb(111, 111, 111);
+}
+.home{
+    color: black;
+}
+div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 90px;
+    background-color: darkgrey;
+    
+}
+h2{
+    font-family: "Grechen Fuemen", serif;
+    font-weight: 40;
+    font-style: normal;
+}
+button{
+    border-radius: 5px;
+    height: 40px;
+    width: 80px;
+    background-color: gray;
+}
+span{
+    display: inline;
+}
+i{
+    display: inline;
+}
+p{
+    display: inline;
+}
