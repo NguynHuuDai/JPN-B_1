@@ -1,0 +1,53 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+ }
+.div3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    width: 450px;
+
+}
+.div1{
+    height: 500px;
+    width: 800px;
+    background-color: bisque;
+    display: flex;
+    flex-direction: row-reverse;
+    
+}
+.div2{
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+    height: 70px;
+    
+}
+button{
+    width: 50%;
+    height: 30px;
+    background-color: brown;
+    color: white;
+    border: 1px solid white;
+    
+}
+.img1{
+    padding-top: 170px;
+   padding-left: 50px;
+   width: 1px;
+   
+}
+.img2{
+    border-radius: 100px ;
+    
+}
+.a{
+    color: black;
+    padding-top: 20px;
+    margin-right: 20px;
+    
+    
+}
