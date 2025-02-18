@@ -4,6 +4,9 @@
 }
 img{
     position: absolute;
+    margin-bottom: 20px;
+    display: block;
+   display: flex;
 }
 .bu{
     color: white;
@@ -19,4 +22,10 @@ img{
 }
 p, h3{
     margin-left: 10px;
+}
+.button2{
+    width: 100%;
+    height: 40px;
+    background-color: black;
+    display: flex;
 }

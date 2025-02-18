@@ -1,0 +1,51 @@
+*{
+    box-sizing: border-box;
+    padding: auto;
+    margin: auto;
+}
+.all{
+    background-color: rgba(128, 128, 128, 0.147);
+    height: 450px;
+    width: 500px;
+}
+
+.divimg{
+    padding-left: 25px;
+}
+
+
+.bong1{
+    height: 30px;
+    width: 100px;
+    border: 1px solid rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 850px;
+    border-radius: 5px;
+    top: 10px;
+    
+}
+
+.cl1{
+    color: rgb(128, 128, 128);
+    line-height: 30px;
+
+}
+.cl2{
+    margin-left: 20px;
+    font-size: 20px;
+    color: black;
+}
+.img1{
+    width: 130px;
+    display: flex;
+    margin-right: 350px;
+    line-height: 50px;
+    
+}
+p{
+    margin-left: 20px;
+}
