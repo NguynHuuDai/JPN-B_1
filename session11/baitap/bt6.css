@@ -1,0 +1,90 @@
+/* Reset some basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f5f5f5;
+    margin: 0;
+}
+
+.top, .end {
+    text-align: center;
+    padding: 20px;
+    background-color: #b00060;
+    color: white;
+    width: 100%;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+}
+
+.hdr {
+    background-color: lightblue;
+    width: 100%;
+    padding: 40px;
+    text-align: center;
+}
+
+.main {
+    background-color: #eee;
+    width: 100%;
+    padding: 40px;
+    text-align: center;
+}
+
+.feat {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    padding: 20px;
+}
+
+.box {
+    background-color: #ffcc80;
+    width: 30%;
+    flex: 1 1 30%;
+    padding: 40px;
+    text-align: center;
+}
+
+.sign {
+    background-color: #bbdefb;
+    width: 30%;
+    flex: 1 1 30%;
+    padding: 40px;
+    text-align: center;
+}
+
+@media (max-width: 1200px) {
+    .feat {
+        justify-content: space-between;
+    }
+    .box, .sign {
+        width: 45%;
+        flex: 1 1 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    .feat {
+        flex-direction: column;
+        align-items: center;
+    }
+    .box, .sign {
+        width: 100%;
+        flex: 1 1 100%;
+    }
+}
