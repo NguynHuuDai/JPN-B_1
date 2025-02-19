@@ -43,7 +43,7 @@ body {
     text-align: center;
 }
 
-.feat {
+.midi {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -60,7 +60,7 @@ body {
     text-align: center;
 }
 
-.sign {
+.sos {
     background-color: #bbdefb;
     width: 30%;
     flex: 1 1 30%;
@@ -72,18 +72,18 @@ body {
     .feat {
         justify-content: space-between;
     }
-    .box, .sign {
+    .box, .sos {
         width: 45%;
         flex: 1 1 45%;
     }
 }
 
 @media (max-width: 768px) {
-    .feat {
+    .midi {
         flex-direction: column;
         align-items: center;
     }
-    .box, .sign {
+    .box, .sos {
         width: 100%;
         flex: 1 1 100%;
     }
