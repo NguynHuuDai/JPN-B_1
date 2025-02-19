@@ -1,90 +1,135 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.image-container {
+    position: relative;
+    width: 360px; 
+    max-width: 600px; 
+}
+
+.image-container img {
+    width: 360px;
+    height: auto;
+    display: block;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 67%;
+    width: 360px;
+    
+    color: white; 
+    font-size: 17px;    
+    font-weight: bold;
+    padding-top: 10px;
+    background-color: rgba(218, 134, 0, 0.5);
+    padding-bottom: 10px;
+    border-radius: 5px;
+}
+span{
+    margin-left: 20px;
+}
+h2{
+    width: 360px;
 }
 
 
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-}
-.content-container {
-    display: flex;
-    justify-content: space-between;
-    max-width: 1200px;
-    margin: 40px auto;
-}
-.recent-news, .clubs-ranking {
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 48%;
-}
 
-h2 {
-    font-size: 28px;
-    margin-bottom: 20px;
-    color: #333;
-}
-
-.news-item {
-    display: flex;
-    margin-bottom: 20px;
-}
-
-.news-item img {
+.news-content{
+    height: 60px;
     width: 200px;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 8px;
-    margin-right: 20px;
 }
-
-.news-content h3 {
-    font-size: 20px;
-    margin-bottom: 10px;
-}
-
 .news-content p {
-    font-size: 14px;
-    color: #555;
-    margin-bottom: 5px;
+    margin-bottom: 0;
+    width: 200px;
 }
+.news-content h3 {
+    margin-top: 0;
+    width: 200px;
+}   
 
-.news-content span {
-    font-size: 12px;
-    color: #777;
+
+
+
+
+/* jkdfjkadbfabdfjkabjkfbakjjk */
+
+
+
+
+.pai{
+    margin-top: 0px;
+    padding-left: 0px;
 }
-
-.news-content a {
-    text-decoration: none;
-    color: #2196F3;
-    font-size: 14px;
+.div1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
 }
-
-.news-content a:hover {
-    text-decoration: underline;
-}
-
-table {
+.div2{
     width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
+    height: 20px;
+    background-color: grey;
+    display: flex;
+    margin-left: 400px;
+    padding-top: 15px;
+    
+}
+.room{
+    display: flex;
 }
 
-table th, table td {
-    padding: 12px;
-    text-align: center;
-    border: 1px solid #ddd;
+
+
+.room img {
+    width: 120px;
+    height: auto;
+    border-radius: 10px;
+    margin-right: 10px;
 }
 
-table th {
-    background-color: #f1f1f1;
+.room content {
+    display: flex;
+    flex-direction: column; 
+    margin-left: 20px;
+}
+
+.info {
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    gap: 20px; 
+}
+
+.year {
+    background-color: #1e40af;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
     font-weight: bold;
 }
 
-table tr:nth-child(even) {
-    background-color: #f9f9f9;
+.category {
+    background-color: gray;
 }
+.content{
+    margin-left: 10px;
+}
+.divchua2{
+    padding-top: 15px;
+    padding-left: 15px;
+    background-color: grey;
+    height: 400px;
+    width: 360px;
+}
+.butter{
+    width: 70px;
+    height: 30px;
+    background-color: rgb(167, 167, 167);
+    margin-top: 10px;
+    margin-left: 130px;
+    border: none;
+}
+
+.clubs-ranking{
+    width: 375px;
+}
+    

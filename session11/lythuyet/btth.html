@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .header{
+            height: 50px;
+            background-color: tomato;
+            
+            line-height: 50px;
+        }
+        .header input{
+            width: 80%;
+            padding: 5px;
+            outline: none;
+            border: none;
+            border-radius: 5px;
+            margin-left: 5px;
+        }
+        .header button{
+            width: 18%;
+            padding: 5px;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            background-color: rgb(8, 208, 235);
+        }
+        /* viết @media ở cuối */
+        @media screen and (max-width:768px) {
+            .header{
+                background-color: yellow;
+                display: flex;
+                flex-direction: column;
+                height: 80px;
+                justify-content: center;
+
+            }
+            .header input{
+                width: 100%;
+                margin: 0;
+                padding: 6px;
+            }
+            .header button{
+                width: 100%;
+                padding: 6px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <input type="text">
+        <button>tìm kiếm</button>
+    </div>
+    <!-- 
+        khi trên màn hình điện thoại(<=768px) thì input và button mỗi ông 1 hàng
+        và độ rộng bằng nhau.
+    -->
+</body>
+</html>
