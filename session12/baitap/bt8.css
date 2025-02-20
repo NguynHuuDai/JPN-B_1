@@ -1,0 +1,41 @@
+.baotrum{
+    width: 50%;
+    margin-left: 100px;
+    background-color: rgb(226, 226, 226);
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-right: 10px;
+    margin-top: 20px;
+    
+}
+.span{
+    opacity: 0.5;
+}
+.br{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: black;
+    height: 1px;
+    margin-top: 10px;
+}
+.button{
+    width: 100%;
+    background-color: blue;
+    border: none;
+    border-radius: 7px;
+    margin-top: 20px;
+    height: 40px;
+}
+.height{
+    width: 50%;
+}
+.roa{
+    margin-top: 10px;
+    width: 64%;
+    display: flex;
+}
+.form{
+    margin-bottom: 10px;
+}
