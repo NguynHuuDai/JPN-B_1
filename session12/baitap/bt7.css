@@ -1,0 +1,49 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+.div1{
+    width: 90%;
+    height: 350px;
+    background-color: gray;
+    margin-left: 5%;
+    display: flex;
+    gap: 3%;
+}
+img{
+    margin-top: 20px;
+    
+    border-radius: 30px;
+    height: 300px;
+    
+
+}
+
+h2{
+    position: absolute;
+    
+}
+.anh1, .anh2, .anh3{
+    width: 30%;
+    position: relative;
+    
+}
+h2 {
+    width: 291px;
+    position: absolute;
+    top: 30%;   
+    left: 10%; 
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+i{
+    height: 20px;
+    width: 20px;
+}
+img{
+    margin-left: 7%;
+}
