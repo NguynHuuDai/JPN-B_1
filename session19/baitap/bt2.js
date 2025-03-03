@@ -1,8 +1,7 @@
-let num = prompt("Nhập vào một chuỗi kí tự");
-let kq = num.indexOf("0"||" 1 "|| "2" || "3" || "4" || "5" || "6" || "7" || "8" || "9" ); //nếu trả về - 1 là ko có số 
+let num = prompt("Nhập vào một chuỗi ký tự");
 
-if(kq != -1){
-    document.write("Đây là chữ cái");
-}else{
-    document.write("Đây không phải chữ cái");
+if (num.indexOf("0") !== -1 || num.indexOf("1") !== -1 || num.indexOf("2") !== -1 || num.indexOf("3") !== -1 || num.indexOf("4") !== -1 || num.indexOf("5") !== -1 || num.indexOf("6") !== -1 || num.indexOf("7") !== -1 || num.indexOf("8") !== -1 || num.indexOf("9") !== -1) {   
+    document.write("Chuỗi không phải chỉ gồm chữ cái.");
+} else {
+    document.write("Chuỗi chỉ chứa chữ cái.");
 }
