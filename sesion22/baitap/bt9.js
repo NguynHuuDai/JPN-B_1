@@ -1,4 +1,4 @@
-let soNguyen = [3, 7, 1, 9, 3, 5, 3, 8, 6, 3];
+let soNguyen = [1,2,52,5,3,64,576,7,4,53,3];
 
 let arr = [];
 for (let i = 0; i < soNguyen.length; i++) {
@@ -18,3 +18,4 @@ for (let i = 0; i < arr.length - 1; i++) {
 }
 
 console.log("Mảng sau khi sắp xếp", arr);
+
