@@ -1,17 +1,29 @@
 let arr = [];
+let n = +(prompt("Nhập số lượng phần tử của mảng: "));
 
+if (n < 0) {
+    console.log("Số lượng phần tử không được nhỏ hơn 0");
+} else if (n === 0) {
+    console.log("Mảng không có phần tử nào");
+} else {
+    for (let i = 0; i < n; i++) {
+        arr.push(+(prompt(`Nhập phần tử thứ ${i + 1}: `)));
+    }
 
-for (let i = 1; i <= 10; i++){
-    do {
-        let number = prompt("moi bạn nhập vào giá trị vị trí thứ " + i);
-        if (Number.isInteger(Number(number))) {
-            arr.push(number);
-            break;
-        } else {
-            alert("moi bạn nhập lại giá trị đúng yêu cầu tại vị trí " + i);
+    if (arr.length < 2) {
+        console.log("Không thể tìm số lớn thứ hai do mảng không đủ phần tử");
+    } else {
+        arr.sort((a, b) => b - a);
+        let max = arr[0];
+        let solont2;
+
+        for (let i = 1; i < arr.length; i++) {
+            if (arr[i] < max) {
+                solont2 = arr[i];
+                break;
+            }
         }
-    } while (1);
-}
-arr.sort((a, b) => a - b);
 
-arr.length === 0 ? console.log("không có số nào lơn nhất") : document.write(`số lớn thứ 2 :${arr[arr.length-2]}`);
+        console.log("Số lớn thứ hai là:", solont2);
+    }
+}
