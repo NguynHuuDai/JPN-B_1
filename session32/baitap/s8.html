@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <input id="job" type="text" placeholder="Nhập công việc">
+    <button onclick="addJob()" class="btn">Thêm</button>
+    <ol class="jobs">
+
+    </ol>
+
+    <script>
+        let jobs = []; 
+        let flag = -1; 
+
+      
+        function renderJobs() {
+            let str = "";
+            for (let i = 0; i < jobs.length; i++) {
+                str += `
+                    <li>${jobs[i].name} 
+                    <button onclick="updateJob(${jobs[i].id})">Sửa</button> 
+                    <button onclick="deleteJob(${jobs[i].id})">Xóa</button></li>
+                `;
+            }
+            document.getElementsByClassName("jobs")[0].innerHTML = str;
+        }
+        renderJobs();
+
+        function addJob() {
+            let name = document.getElementById("job").value;
+            if (flag !== -1) {
+                let updatedJob = {
+                    id: jobs[flag].id,
+                    name: name
+                };
+                jobs.splice(flag, 1, updatedJob);
+                document.getElementsByClassName("btn")[0].innerHTML = "Thêm";
+                document.getElementById("job").value = "";
+                renderJobs();
+                flag = -1;
+                return;
+            }
+
+            let id;
+            if (jobs.length === 0) {
+                id = 1;
+            } else {
+                id = jobs[jobs.length - 1].id + 1;
+            }
+            let newJob = {
+                id: id,
+                name: name
+            };
+            jobs.push(newJob);
+            document.getElementById("job").value = "";
+            renderJobs();
+        }
+
+        function deleteJob(id) {
+   
+            if (confirm("Bạn có chắc chắn muốn xóa công việc này?")) {
+                let index = jobs.findIndex(item => item.id === id);
+                jobs.splice(index, 1);
+                renderJobs();
+            }
+        }
+        function updateJob(id) {
+            let item = jobs.find(item => item.id === id);
+            let index = jobs.findIndex(item => item.id === id);
+            document.getElementById("job").value = item.name;
+            document.getElementsByClassName("btn")[0].innerHTML = "Sửa";
+            flag = index;
+        }
+    </script>
+</body>
+
+</html>
