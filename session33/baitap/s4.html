@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập 4</title>
+    <style>
+        .progress-container {
+            width: 100%;
+            background-color: #f3f3f3;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .progress-bar {
+            height: 30px;
+            width: 0%;
+            text-align: center;
+            line-height: 30px;
+            color: white;
+            font-weight: bold;
+            border-radius: 10px;
+            transition: width 0.5s ease-in-out;
+        }
+
+        .button-container {
+            margin-top: 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            margin: 10px;
+            border-radius: 5px;
+            border: none;
+            background-color: rgb(50, 50, 255);
+            color: white;
+        }
+
+        button:hover {
+            background-color: #ddd;
+        }
+
+        button:disabled {
+            background-color: gray;
+            cursor: not-allowed;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Thanh Tiến Trình</h2>
+
+    <div class="progress-container">
+        <div id="progress-bar" class="progress-bar">0%</div>
+    </div>
+
+    <div class="button-container">
+        <button id="increase-btn" onclick="changeProgress('increase')">Tăng tiến trình</button>
+        <button id="decrease-btn" onclick="changeProgress('decrease')">Giảm tiến trình</button>
+    </div>
+
+    <script>
+        let progress = 0;
+
+        function changeProgress(action) {
+            if (action === 'increase' && progress < 100) {
+                progress += 10;
+            } else if (action === 'decrease' && progress > 0) {
+                progress -= 10;
+            }
+            updateProgressBar();
+        }
+
+        function updateProgressBar() {
+            let progressBar = document.getElementById('progress-bar');
+            progressBar.style.width = progress + '%';
+            progressBar.innerHTML = progress + '%';
+
+            if (progress <= 30) {
+                progressBar.style.backgroundColor = 'red';
+            } else if (progress <= 70) {
+                progressBar.style.backgroundColor = 'orange';
+            } else {
+                progressBar.style.backgroundColor = 'green';
+            }
+
+            document.getElementById('increase-btn').disabled = progress >= 100;
+            document.getElementById('decrease-btn').disabled = progress <= 0;
+        }
+    </script>
+
+</body>
+
+</html>

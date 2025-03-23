@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập 2</title>
+</head>
+
+<body>
+    <textarea id="inputText" rows="4" cols="30" placeholder="Nhập văn bản..."></textarea>
+    <br>
+    <button id="countButton">Kiểm tra</button>
+    <p>Số ký tự: <span id="charCount">0</span></p>
+
+    <script>
+        let inputText = document.getElementById("inputText");
+        let countButton = document.getElementById("countButton");
+        let charCount = document.getElementById("charCount");
+
+        countButton.addEventListener("click", function () {
+            charCount.textContent = inputText.value.length;
+        });
+    </script>
+
+</body>
+
+</html>
