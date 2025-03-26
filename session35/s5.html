@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="b5.css">
+    <style>
+        #header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        }
+        #header span {
+        font-size: 30px;
+        }
+
+        #header button {
+        width: 200px;
+        height: 30px;
+        font-size: 15px;
+        color: white;
+        background-color: #4094F7;
+        border-radius: 5px;
+        border: none;
+
+        }
+        #fontInput {
+        display: flex;
+        justify-content: space-between;
+        }
+
+        #findNameInput {
+        height: 25px;
+        width: 200px;
+        border-radius: 5px 0px 0px 5px;
+        }
+
+        select {
+        height: 30px;
+        width: 200px;
+        border-radius: 5px;
+        }
+
+        #findButton {
+        height: 31px;
+        width: 30px;
+        border-radius: 0px 5px 5px 0px;
+        position: relative;
+        right: 5px;
+        }
+        #fontTable {
+        margin-left: auto;
+        margin-right: auto;
+        }
+        .td1 {
+        width: 400px;
+        height: 3px;
+        }
+        .tdHeader {
+        background-color: #F9FAFB;
+        }
+        .td2 {
+        width: 600px;
+
+        }
+        .td3 {
+        width: 250px;
+        }
+        .td4 {
+        width: 250px;
+
+        }
+        .trashButton {
+        border: none;
+        background: none;
+        color: red;
+        }
+        .penButton {
+        border: none;
+        background: none;
+        color: yellow;
+        }
+        .hide {
+        display: none;
+        }
+        #addGui {
+        position: fixed;
+        height: 450px;
+        width: 600px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #ffffff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        border-radius: 5px;
+        z-index: 3;
+        }
+        #addGuiHeader {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 50px;
+        }
+        #addGuiHeader span {
+        margin-left: 5%;
+        font-size: 20px;
+        }
+        #addGuiHeader button {
+        font-size: 20px;
+        background: none;
+        border: none;
+        margin-right: 5%;
+        }
+        .modalBackground {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 2;
+        }
+        .line {
+        margin-left: 5%;
+        margin-right: 5%;
+        }
+        #addGui p {
+        margin-left: 5%;
+        margin-right: 5%;
+        }
+        #addGui .input {
+        margin-left: 5%;
+        width: 90%;
+        height: 8%;
+        margin-right: 5%;
+        border-radius: 5px;
+        }
+        .inputSpace {
+        margin-left: 5%;
+        }
+        #listAddButton {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        }
+        #listAddButton {
+        margin-left: 5%;
+        margin-right: 5%;
+        }
+        #addButton {
+        background-color: #007AFF;
+        border-radius: 5px;
+        border: none;
+        color: white;
+        height: 30px;
+        width: 60px;
+        }
+        #declineButton {
+        background-color: white;
+        border: 1px solid black;
+        height: 30px;
+        width: 50px;
+        border-radius: 5px;
+        }
+        .red {
+        color: red;
+        }
+        .statusOff {
+        color: red;
+        background-color: #DC8A8A;
+        border-radius: 5px;
+        }
+        .statusOn {
+        color: green;
+        background-color: #ECFDF3;
+        border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="opacityBackground" class=""></div>
+    <div id="header">
+        <span>Danh mục</span>
+        <button onclick="showAddGui()">Thêm danh mục</button>
+    </div>
+    <div id="fontInput">
+        <div></div>
+        <div>
+            <select name="" id="Status">
+                <option value="Tat ca">chon</option>
+                <option value="Dang hoat dong">Đang Hoạt Động</option>
+                <option value="Ngung hoat dong">Ngừng Hoạt Động</option>
+            </select>
+            <input type="text" placeholder="Tim kiem danh muc theo ten" id="findNameInput">
+            <button id="findButton"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+    </div>
+    <table id="fontTable" cellspacing="0" cellpadding="9">
+    </table>
+    <div id="addGui">
+        <div id="addGuiHeader">
+            <span>Thêm mới danh mục</span>
+            <button onclick="showAddGui()">x</button>
+        </div>
+        <p>Mã Danh mục</p>
+        <input type="text" class="input" id="inputID">
+        <p id="errorIDAlert" class="red hide">Mã danh mục khoong được để trống</p>
+        <p>Tên danh Mục</p>
+        <input type="text" class="input" id="inputName">
+        <p id="errorNameAlert" class="red hide">Tên danh mục không được để trống</p>
+        <p>Trạng Thái</p>
+        <input type="radio" name="status" value="Dang hoat dong" class="inputSpace" checked> Đang hoạt động
+        <input type="radio" value="Ngung hoat dong" name="status"> Ngừng hoạt động
+        <hr class="line">
+        <div id="listAddButton">
+            <div></div>
+            <div>
+                <button id="declineButton">Hủy</button>
+                <button id="addButton" onclick="addItem()">Thêm</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        let dataName = "listS35B5";
+
+        function getData() {
+        return JSON.parse(localStorage.getItem(dataName)) || [];
+        }
+
+        function showAddGui() {
+        document.getElementById("addGui").classList.toggle("hide");
+        }
+
+        function render() {
+        let message = `
+        <tr>
+            <td class="td1 tdHeader">Ma danh muc <i class="fa-solid fa-arrow-down"></i></td>
+            <td class="td2 tdHeader">Ten danh muc <i class="fa-solid fa-arrow-down"></i></td>
+            <td class="td3 tdHeader">Trang thai</td>
+            <td class="td4 tdHeader">Chuc nang</td>
+        </tr>
+        `;
+        let list = getData();
+        for (let i = 0; i < list.length; i++){ let statusMess="" ; if (list[i].status==="Dang hoat dong" ) {
+            statusMess=`<td class="td3"><mark class="statusOn">&bull; ${list[i].status}</mark></td>`;
+            } else {
+            statusMess = `<td class="td3"><mark class="statusOff">&bull; ${list[i].status}</mark></td>`;
+            }
+            message += `
+            <tr>
+                <td class="td1">${list[i].id}</td>
+                <td class="td2">${list[i].name}</td>
+                ${statusMess}
+                <td class="td4"><button class="trashButton"><i class="fa-solid fa-trash"></i></button> <button
+                        class="penButton"><i class="fa-solid fa-pen"></i></button></td>
+            </tr>
+            `;
+            }
+            document.getElementById("fontTable").innerHTML = message;
+            }
+            function addItem() {
+            let idInput = document.getElementById("inputID").value.trim();
+            let nameInput = document.getElementById("inputName").value.trim();
+            if (idInput && nameInput) {
+            let list = getData();
+            document.getElementById("errorIDAlert").classList.add("hide");
+            document.getElementById("errorNameAlert").classList.add("hide");
+            for (let i = 0; i < list.length; i++){ if (idInput===list[i].id) {
+                document.getElementById("errorIDAlert").classList.remove("hide");
+                document.getElementById("errorIDAlert").innerHTML="ID bi trung lap moi nhap lai!!" ; return; } } let
+                status=document.querySelector('input[name="status" ]:checked').value; let temp={ id: idInput, name:
+                nameInput, status }; list.push(temp); localStorage[dataName]=JSON.stringify(list);
+                document.getElementById("inputID").value="" ; document.getElementById("inputName").value="" ;
+                document.querySelector('input[name="status" ]').checked=true; render(); showAddGui(); } else if
+                (!idInput && !nameInput) { document.getElementById("errorIDAlert").classList.remove("hide");
+                document.getElementById("errorNameAlert").classList.remove("hide"); } else if (!nameInput) {
+                document.getElementById("errorIDAlert").classList.add("hide");
+                document.getElementById("errorNameAlert").classList.remove("hide"); } else if (!idInput) {
+                document.getElementById("errorIDAlert").classList.remove("hide");
+                document.getElementById("errorNameAlert").classList.add("hide"); } } render()
+    </script>
+</body>
+
+</html>
