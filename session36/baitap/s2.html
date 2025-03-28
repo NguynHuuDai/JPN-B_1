@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập 2</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: rgb(242, 242, 242);
+        }
+
+        .div1,.div2,.div3 {
+            display: flex;
+            width: 460px;
+            padding: 15px;
+            background-color: white;
+            border-radius: 5px;
+        }
+
+        div p {
+            width: 80px;
+            flex-direction: column;
+        }
+
+        .divt3 {
+            display: flex;
+        }
+
+        button {
+            background-color: rgb(0, 177, 0);
+            color: white;
+            border: none;
+            width: 67px;
+            height: 30px;
+            border-radius: 4px;
+        }
+
+        .divt2 {
+            margin-left: 20px;
+        }
+
+        .baotrum {
+            width: 450px;
+            height: 700px;
+        }
+
+        .div3 {
+            margin-top: 20px;
+        }
+
+        .btn {
+            width: 10px;
+            margin-left: 8px;
+            margin-right: 12px;
+        }
+        h1{
+            margin-right: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Bạn thích món nào nhất</h1>
+    <div class="baotrum">
+        <div class="div1">
+            <img src="https://i2.ex-cdn.com/crystalbay.com/files/content/2024/08/15/bun-bo-hue-6-0935.jpeg" alt=""
+                width="250px" height="150px">
+            <div class="divt2">
+                <h2>Bún bò Huế</h2>
+                <div class="divt3">
+                    <i style="margin-top: 17px;color: red;" class="fa-solid fa-heart"></i>
+                    <p class="btn" id="name"></p>
+                    <p>Lượt thích</p>
+                </div>
+                <button class="onclick">Thích +1</button>
+            </div>
+        </div>
+
+        <div class="div2" style="margin-top: 20px;">
+            <img src="https://static.vinwonders.com/production/pho-bo-ha-noi.jpeg" alt="" width="250px" height="150px">
+            <div class="divt2">
+                <h2>Phở bò Hà Nội</h2>
+                <div class="divt3">
+                    <i style="margin-top: 17px;color: red;" class="fa-solid fa-heart"></i>
+                    <p class="btn" id="name2"></p>
+                    <p>Lượt thích</p>
+                </div>
+                <button class="onclick2">Thích +1</button>
+            </div>
+        </div>
+
+        <div class="div3">
+            <img src="https://static.vinwonders.com/production/com-tam-sai-gon-thumb.jpg" alt="" width="250px"
+                height="150px">
+            <div class="divt2">
+                <h2 style="width: 185px;">Cơm tấm Sài Gòn</h2>
+                <div class="divt3">
+                    <i style="margin-top: 17px;color: red;" class="fa-solid fa-heart"></i>
+                    <p class="btn" id="name3"></p>
+                    <p>Lượt thích</p>
+                </div>
+                <button class="onclick3">Thích +1</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function loadLikes(id) {
+            return localStorage.getItem(id) ? parseInt(localStorage.getItem(id)) : 0;
+        }
+
+        function updateLikes(id, element) {
+            let count = loadLikes(id) + 1;
+            localStorage.setItem(id, count);
+            element.innerHTML = count;
+        }
+
+        document.getElementById("name").innerHTML = loadLikes("name");
+        document.getElementById("name2").innerHTML = loadLikes("name2");
+        document.getElementById("name3").innerHTML = loadLikes("name3");
+
+        document.getElementsByClassName("onclick")[0].addEventListener("click", () => updateLikes("name", document
+            .getElementById("name")));
+        document.getElementsByClassName("onclick2")[0].addEventListener("click", () => updateLikes("name2", document
+            .getElementById("name2")));
+        document.getElementsByClassName("onclick3")[0].addEventListener("click", () => updateLikes("name3", document
+            .getElementById("name3")));
+    </script>
+</body>
+
+</html>

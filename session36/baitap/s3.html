@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập 3</title>
+    <style>
+        body {
+            text-align: center;
+
+        }
+
+        button {
+            border: none;
+            margin: 10px;
+            padding: 8px 12px;
+            height: 35px;
+            width: 90px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        h3 {
+            opacity: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Chọn màu nền bạn yêu thích</h2>
+    <button onclick="changeColor('red')" style="background-color: red; color: white;">Đỏ</button>
+    <button onclick="changeColor('blue')" style="background-color: blue; color: white;">Xanh</button>
+    <button onclick="changeColor('yellow')" style="background-color: yellow;">Vàng</button>
+    <button onclick="changeColor('purple')" style="background-color: purple; color: white;">Tím</button>
+    <h3>Trang sẽ ghi nhớ màu bạn chọn kể cả khi tải lại!</h3>
+
+    <script>
+        function changeColor(color) {
+            document.body.style.backgroundColor = color;
+            localStorage.setItem("backgroundColor", color);
+        }
+        window.onload = function () {
+            const savedColor = localStorage.getItem("backgroundColor");
+            if (savedColor) {
+                document.body.style.backgroundColor = savedColor;
+            }
+        }
+    </script>
+</body>
+
+</html>
